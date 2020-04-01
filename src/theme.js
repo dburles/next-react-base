@@ -7,14 +7,14 @@ export default {
     primary: {
       // you can reference other values defined in the theme
       color: 'white',
-      backgroundColor: 'primary'
+      backgroundColor: 'primary',
     },
     secondary: {
       color: 'text',
-      backgroundColor: 'yellow'
-    }
+      backgroundColor: 'yellow',
+    },
   },
   styles: {
-    ...bulma
-  }
+    ...bulma,
+  },
 };
