@@ -1,4 +1,4 @@
-const Button = props => {
+const Button = (props) => {
   return (
     <button
       {...props}
@@ -8,7 +8,7 @@ const Button = props => {
         border: 'none',
         borderRadius: 3,
         fontSize: 2,
-        variant: 'buttons.primary'
+        variant: 'buttons.primary',
       }}
     />
   );
