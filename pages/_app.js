@@ -1,13 +1,11 @@
 import PropTypes from 'prop-types';
-import { Styled, ThemeProvider } from 'theme-ui';
+import { ThemeProvider } from 'theme-ui';
 import theme from '../lib/theme';
 
 const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
-      <Styled.root>
-        <Component {...pageProps} />
-      </Styled.root>
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 };
