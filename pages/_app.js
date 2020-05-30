@@ -1,20 +1,19 @@
+import { MysticalProvider } from 'mystical';
 import PropTypes from 'prop-types';
-import { Styled, ThemeProvider } from 'theme-ui';
 import theme from '../lib/theme';
 
-const App = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps, cache }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <Styled.root>
-        <Component {...pageProps} />
-      </Styled.root>
-    </ThemeProvider>
+    <MysticalProvider theme={theme} cache={cache}>
+      <Component {...pageProps} />
+    </MysticalProvider>
   );
 };
 
 App.propTypes = {
   Component: PropTypes.elementType.isRequired,
   pageProps: PropTypes.object,
+  cache: PropTypes.object,
 };
 
 export default App;

@@ -2,13 +2,11 @@ const Button = (props) => {
   return (
     <button
       {...props}
-      sx={{
-        py: 2,
-        px: 3,
-        border: 'none',
+      css={{
+        padding: '2 3',
+        borderStyle: 'none',
         borderRadius: 3,
-        fontSize: 2,
-        variant: 'buttons.primary',
+        fontSize: 1,
       }}
     />
   );

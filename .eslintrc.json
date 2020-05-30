@@ -10,6 +10,7 @@
     "curly": [
       "error",
       "all"
-    ]
+    ],
+    "no-sparse-arrays": 0
   }
 }
