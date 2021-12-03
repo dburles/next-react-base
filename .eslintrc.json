@@ -1,16 +1,9 @@
 {
-  "extends": [
-    "env"
-  ],
+  "extends": ["env"],
   "rules": {
-    "arrow-body-style": [
-      "error",
-      "always"
-    ],
-    "curly": [
-      "error",
-      "all"
-    ],
-    "no-sparse-arrays": 0
+    "arrow-body-style": ["error", "always"],
+    "curly": ["error", "all"],
+    "jsdoc/require-jsdoc": "off",
+    "func-style": ["error", "declaration"]
   }
 }

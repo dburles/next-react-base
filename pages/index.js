@@ -1,11 +1,11 @@
-import Button from '../components/Button';
+import Button from "../components/Button";
 
-const IndexPage = () => {
+function IndexPage() {
   return (
     <div>
       <Button>Hello Next.js</Button>
     </div>
   );
-};
+}
 
 export default IndexPage;

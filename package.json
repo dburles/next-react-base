@@ -11,39 +11,36 @@
     "export": "next export",
     "start": "next start",
     "test": "npm run test:lint",
-    "test:lint": "eslint ."
+    "test:lint": "eslint .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
+    "@babel/eslint-parser": "^7.16.3",
     "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.8.0",
-    "eslint-config-env": "^13.0.4",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-compat": "^3.5.1",
+    "@next/eslint-plugin-next": "^12.0.5",
+    "eslint": "^8.3.0",
+    "eslint-config-env": "^23.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-compat": "^4.0.0",
     "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsdoc": "^22.0.1",
+    "eslint-plugin-jsdoc": "^37.1.0",
     "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "husky": "^4.2.1",
-    "lint-staged": "^10.0.7",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.0.2"
   },
   "dependencies": {
     "@mdx-js/react": "^1.5.5",
-    "@next/mdx": "^9.3.1",
-    "mystical": "^4.2.0",
-    "next": "^9.4.4",
+    "@next/mdx": "^12.0.4",
+    "mystical": "^10.0.1",
+    "next": "^12.0.4",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "lint-staged": {
     "*.js": "eslint"
